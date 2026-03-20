@@ -162,6 +162,14 @@ export default function Home() {
                       <p className="text-xs text-muted-foreground">天然素材</p>
                     </div>
                   </div>
+                  <a
+                  href="https://reco-catalog-2026.my.canva.site"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-full bg-white hover:bg-emerald-50 text-emerald-700 border border-emerald-600 py-3 rounded-md text-sm font-medium mb-2"
+            >
+              📄 詳細資料はこちら
+            </a>
                   <Link href="/products/recopallet" className="flex items-center justify-center w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded-md font-medium transition-colors no-underline">
                     詳しく見る <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
