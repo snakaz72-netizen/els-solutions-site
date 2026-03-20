@@ -239,6 +239,13 @@ export default function ContinewmPage() {
               製品の詳細や価格、導入に関するご相談など、お気軽にお問い合わせください。
               認定販売員が的確なご提案とサポートを提供いたします。
             </p>
+             href="https://reco-catalog-2026.my.canva.site/continewm-25-8-pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center bg-white hover:bg-blue-50 text-blue-700 border border-blue-600 px-10 h-12 text-base font-semibold rounded-md mb-4"
+>
+  📄 詳細資料はこちら
+</a>
             <Link href="/contact" className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-primary-foreground px-10 h-12 text-base font-medium rounded-md transition-colors no-underline">
               お問い合わせ <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
