@@ -85,7 +85,6 @@ export default function ContinewmPage() {
                     { label: "原産国", value: "日本（東証スタンダード上場企業の日本国内工場）" },
                     { label: "特許番号", value: "日本: 第6486409号 / 米国: US 11846437 B2, US 12098853 B2" },
                     { label: "意匠登録", value: "第1597440号" },
-                    { label: "希望小売価格", value: "1枚 20,000円" },
                     { label: "製造・販売元", value: "コンティニューム株式会社" },
                     { label: "販売開始", value: "2016年4月" },
                     { label: "設置方法", value: "フィルターの上に乗せるだけ（工事不要）" },
