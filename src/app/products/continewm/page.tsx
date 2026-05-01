@@ -239,7 +239,7 @@ export default function ContinewmPage() {
               認定販売員が的確なご提案とサポートを提供いたします。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              
+              <a
                 href="https://reco-catalog-2026.my.canva.site/continewm-25-8-pdf"
                 target="_blank"
                 rel="noopener noreferrer"
