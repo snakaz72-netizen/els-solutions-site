@@ -4,6 +4,15 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -47,20 +56,21 @@ export async function POST(request: NextRequest) {
     // メール通知送信
     if (process.env.RESEND_API_KEY) {
       await resend.emails.send({
-        from: "onboarding@resend.dev",
+        from: "ELSソリューションズ <noreply@els-solutions.co.jp>",
         to: "info@els-solutions.co.jp",
-        subject: `【お問い合わせ】${companyName} ${contactName}様より`,
+        replyTo: email,
+        subject: `【お問い合わせ】${escapeHtml(companyName)} ${escapeHtml(contactName)}様より`,
         html: `
           <h2>ELSソリューションズ お問い合わせ通知</h2>
           <table border="1" cellpadding="8" style="border-collapse:collapse;">
-            <tr><td><strong>会社名</strong></td><td>${companyName}</td></tr>
-            <tr><td><strong>部署</strong></td><td>${body.department || "-"}</td></tr>
-            <tr><td><strong>役職</strong></td><td>${body.position || "-"}</td></tr>
-            <tr><td><strong>お名前</strong></td><td>${contactName}</td></tr>
-            <tr><td><strong>メールアドレス</strong></td><td>${email}</td></tr>
-            <tr><td><strong>電話番号</strong></td><td>${body.phone || "-"}</td></tr>
-            <tr><td><strong>製品</strong></td><td>${body.productName || "-"}</td></tr>
-            <tr><td><strong>お問い合わせ内容</strong></td><td>${message}</td></tr>
+            <tr><td><strong>会社名</strong></td><td>${escapeHtml(companyName)}</td></tr>
+            <tr><td><strong>部署</strong></td><td>${escapeHtml(body.department || "-")}</td></tr>
+            <tr><td><strong>役職</strong></td><td>${escapeHtml(body.position || "-")}</td></tr>
+            <tr><td><strong>お名前</strong></td><td>${escapeHtml(contactName)}</td></tr>
+            <tr><td><strong>メールアドレス</strong></td><td>${escapeHtml(email)}</td></tr>
+            <tr><td><strong>電話番号</strong></td><td>${escapeHtml(body.phone || "-")}</td></tr>
+            <tr><td><strong>製品</strong></td><td>${escapeHtml(body.productName || "-")}</td></tr>
+            <tr><td><strong>お問い合わせ内容</strong></td><td>${escapeHtml(message)}</td></tr>
           </table>
         `,
       });
