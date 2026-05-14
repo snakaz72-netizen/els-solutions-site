@@ -34,23 +34,27 @@ export async function POST(request: NextRequest) {
     }
 
     if (process.env.DATABASE_URL) {
-      await initDB();
-      const db = getPool();
-      await db.execute(
-        `INSERT INTO inquiries (companyName, department, position, contactName, contactNameKana, email, phone, productName, message)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-        [
-          body.companyName,
-          body.department || null,
-          body.position || null,
-          body.contactName,
-          body.contactNameKana || null,
-          body.email,
-          body.phone || null,
-          body.productName || null,
-          body.message,
-        ]
-      );
+      try {
+        await initDB();
+        const db = getPool();
+        await db.execute(
+          `INSERT INTO inquiries (companyName, department, position, contactName, contactNameKana, email, phone, productName, message)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+          [
+            body.companyName,
+            body.department || null,
+            body.position || null,
+            body.contactName,
+            body.contactNameKana || null,
+            body.email,
+            body.phone || null,
+            body.productName || null,
+            body.message,
+          ]
+        );
+      } catch (dbError) {
+        console.error("DB save error (non-fatal):", dbError);
+      }
     }
 
     // メール通知送信
