@@ -1,3 +1,14 @@
+declare global {
+  interface Window {
+    gtag: (
+      command: "config" | "event" | "js" | "set",
+      targetId: string | Date,
+      config?: Record<string, unknown>
+    ) => void;
+    dataLayer: unknown[];
+  }
+}
+
 export const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
 
 export const pageview = (url: string) => {
