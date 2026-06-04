@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { GA_ID } from "@/lib/gtag";
 
 const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-sans-jp",
@@ -37,6 +39,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        {GA_ID && (
+          <>
+            <Script
+              strategy="afterInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+            />
+            <Script
+              id="gtag-init"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${GA_ID}', { page_path: window.location.pathname });
+                `,
+              }}
+            />
+          </>
+        )}
+      </head>
       <body className={`${notoSansJP.variable} antialiased font-sans`}>
         <div className="flex flex-col min-h-screen">
           <Header />
