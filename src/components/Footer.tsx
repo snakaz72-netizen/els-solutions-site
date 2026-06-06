@@ -64,10 +64,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-background/10 mt-12 pt-8 text-center">
+        <div className="border-t border-background/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-background/40">
             &copy; {new Date().getFullYear()} ELSソリューションズ株式会社. All rights reserved.
           </p>
+          <Link href="/privacy" className="text-xs text-background/40 hover:text-background/70 transition-colors no-underline">
+            プライバシーポリシー
+          </Link>
         </div>
       </div>
     </footer>
