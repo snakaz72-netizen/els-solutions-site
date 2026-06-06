@@ -9,6 +9,8 @@ const navLinks = [
   { href: "/", label: "ホーム" },
   { href: "/products/recopallet", label: "RECOPALLET" },
   { href: "/products/continewm", label: "CONTINEWM" },
+  { href: "/products/cm-fiber-cassette", label: "CM Fiber Cassette" },
+  { href: "/faq", label: "FAQ" },
   { href: "/about", label: "会社概要" },
   { href: "/contact", label: "お問い合わせ" },
 ];
