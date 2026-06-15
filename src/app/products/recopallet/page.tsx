@@ -384,9 +384,14 @@ export default function RecopalletPage() {
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
                 製品の詳細や価格、導入に関するご相談など、お気軽にお問い合わせください。
               </p>
-              <Link href="/contact" className="inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white px-10 h-12 text-base font-medium rounded-md transition-colors no-underline">
-                お問い合わせ <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/contact" className="inline-flex items-center justify-center bg-white hover:bg-emerald-50 text-emerald-700 border border-emerald-600 px-10 h-12 text-base font-semibold rounded-md no-underline">
+                  資料請求はこちら
+                </Link>
+                <Link href="/contact" className="inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white px-10 h-12 text-base font-medium rounded-md transition-colors no-underline">
+                  お問い合わせ <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+              </div>
             </MotionDiv>
           </div>
         </section>

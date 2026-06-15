@@ -487,12 +487,14 @@ export default function CmFiberCassettePage() {
                 設備の水量・用途に応じた最適なプランをご提案します。
                 サンプルのご提供・お見積もりも承っております。
               </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center bg-teal-600 hover:bg-teal-700 text-white px-10 h-12 text-base font-medium rounded-md transition-colors no-underline"
-              >
-                お問い合わせ <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/contact" className="inline-flex items-center justify-center bg-white hover:bg-teal-50 text-teal-700 border border-teal-600 px-10 h-12 text-base font-semibold rounded-md no-underline">
+                  資料請求はこちら
+                </Link>
+                <Link href="/contact" className="inline-flex items-center justify-center bg-teal-600 hover:bg-teal-700 text-white px-10 h-12 text-base font-medium rounded-md transition-colors no-underline">
+                  お問い合わせ <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+              </div>
             </MotionDiv>
           </div>
         </section>
