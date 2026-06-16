@@ -10,6 +10,7 @@ import RecoPalletCalculator from "@/components/calculators/RecoPalletCalculator"
 export const metadata: Metadata = {
   title: "RECO PALLET｜ヤシ殻×バイオマス廃材製エコパレット｜ELSソリューションズ",
   description: "農業廃棄物のヤシ殻50%＋ウッド廃材50%から製造。ESGスコープ3カテゴリー1対応。製造工程は太陽光発電100%使用。ISPM15免除認証取得済み。",
+  alternates: { canonical: "https://els-solutions.co.jp/products/recopallet" },
 };
 
 const faqItems = [

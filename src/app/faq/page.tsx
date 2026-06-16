@@ -6,6 +6,7 @@ import { MotionDiv } from "@/components/MotionWrapper";
 export const metadata: Metadata = {
   title: "よくある質問（FAQ）｜ESG・製品・お問い合わせ｜ELSソリューションズ",
   description: "ESGスコープ1・2・3の違い、カーボンニュートラルの意味、各製品についてのよくある質問をまとめています。",
+  alternates: { canonical: "https://els-solutions.co.jp/faq" },
 };
 
 const categories = [

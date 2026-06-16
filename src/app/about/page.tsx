@@ -10,6 +10,7 @@ import { MotionDiv } from "@/components/MotionWrapper";
 export const metadata: Metadata = {
   title: "会社概要｜ELSソリューションズ株式会社",
   description: "ELSソリューションズ株式会社の会社概要。代表取締役：中澤俊輔。千葉県浦安市拠点。ESG・サステナビリティ関連製品の販売代理店。",
+  alternates: { canonical: "https://els-solutions.co.jp/about" },
 };
 
 const companyRows = [

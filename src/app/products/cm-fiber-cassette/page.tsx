@@ -9,6 +9,7 @@ import { MotionDiv } from "@/components/MotionWrapper";
 export const metadata: Metadata = {
   title: "CM Fiber Cassette｜冷水チラー用ノンケミカル洗浄カセット｜ELSソリューションズ",
   description: "冷水チラー設備・冷却塔の循環水に置くだけ。スケール・藻類・細菌類をノンケミカルで除去。動力源不要・再利用可能。日本製・特許取得済み。",
+  alternates: { canonical: "https://els-solutions.co.jp/products/cm-fiber-cassette" },
 };
 
 const faqItems = [

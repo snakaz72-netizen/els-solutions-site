@@ -10,6 +10,7 @@ import ContinewmCalculator from "@/components/calculators/ContinewmCalculator";
 export const metadata: Metadata = {
   title: "CONTINEWM（コンティニューム）｜空調省エネシート｜ELSソリューションズ",
   description: "エアコンのフィルターに置くだけで消費電力を削減。ESGスコープ2対応。日本・米国特許取得。国内約8,000箇所以上に導入実績。",
+  alternates: { canonical: "https://els-solutions.co.jp/products/continewm" },
 };
 
 const faqItems = [

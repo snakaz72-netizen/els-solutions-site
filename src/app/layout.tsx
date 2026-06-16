@@ -14,6 +14,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://els-solutions.co.jp"),
   title: {
     default: "ELSソリューションズ株式会社 | ESG & Sustainability Solutions",
     template: "%s | ELSソリューションズ株式会社",
