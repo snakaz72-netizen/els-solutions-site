@@ -61,6 +61,7 @@ export default function RootLayout({
             />
           </>
         )}
+      <meta name="google-site-verification" content="DgRwXpQTdu6otuRXga_8YrVFGvHs_sqCYWsQCfLVBCc" />
       </head>
       <body className={`${notoSansJP.variable} antialiased font-sans`}>
         <div className="flex flex-col min-h-screen">
