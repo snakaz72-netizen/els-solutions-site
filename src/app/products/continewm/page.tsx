@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   description: "エアコンのフィルターに置くだけで消費電力を削減。ESGスコープ2対応。日本・米国特許取得。国内約8,000箇所以上に導入実績。",
   alternates: { canonical: "https://els-solutions.co.jp/products/continewm" },
   openGraph: {
+    title: "CONTINEWM｜空調省エネシート｜工事不要・日米特許取得",
+    description: "エアコンのフィルターに乗せるだけで消費電力を削減。ESGスコープ2対応。国内8,000箇所以上の導入実績。",
     images: [{ url: "https://els-solutions.co.jp/images/og-default.png" }],
   },
 };

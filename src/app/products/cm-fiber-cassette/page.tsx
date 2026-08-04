@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   description: "冷水チラー設備・冷却塔の循環水に置くだけ。スケール・藻類・細菌類をノンケミカルで除去。動力源不要・再利用可能。日本製・特許取得済み。",
   alternates: { canonical: "https://els-solutions.co.jp/products/cm-fiber-cassette" },
   openGraph: {
+    title: "CM Fiber Cassette｜冷水チラー用ノンケミカル洗浄カセット",
+    description: "循環水に置くだけ。スケール・藻類・細菌類をノンケミカルで除去。動力源不要・再利用可能。日本製・特許取得済み。",
     images: [{ url: "https://els-solutions.co.jp/images/og-default.png" }],
   },
 };
