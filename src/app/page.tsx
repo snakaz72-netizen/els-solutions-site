@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  title: "ELSソリューションズ | ESG・省エネ製品で企業のサステナビリティを支援",
+  description: "RECO PALLET・CONTINEWM・CM Fiber Cassetteで企業のESG経営とCO₂削減を支援。工事不要の省エネソリューション。導入実績8,000箇所以上。",
   alternates: { canonical: "https://els-solutions.co.jp/" },
 };
 import {
