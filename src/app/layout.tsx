@@ -16,21 +16,35 @@ const notoSansJP = Noto_Sans_JP({
 export const metadata: Metadata = {
   metadataBase: new URL("https://els-solutions.co.jp"),
   title: {
-    default: "ELSソリューションズ株式会社 | ESG & Sustainability Solutions",
-    template: "%s | ELSソリューションズ株式会社",
+    default: "ELSソリューションズ | ESG・省エネ製品",
+    template: "%s | ELSソリューションズ",
   },
   description:
-    "ELSソリューションズは、環境・社会・ガバナンスに配慮した革新的な製品（RECOPALLET・CONTINEWM）を通じて、企業のESG経営とサスティナビリティの実現を支援します。",
+    "RECO PALLET・CONTINEWM・CM Fiber Cassetteで企業のESG経営とCO₂削減を支援。工事不要の省エネソリューション。導入実績8,000箇所以上。",
   keywords: [
     "ESG",
     "サステナビリティ",
-    "RECOPALLET",
+    "RECO PALLET",
     "CONTINEWM",
+    "CM Fiber Cassette",
     "環境配慮",
     "省エネ",
-    "パレット",
+    "バイオマスパレット",
     "ELSソリューションズ",
   ],
+  openGraph: {
+    type: "website",
+    locale: "ja_JP",
+    url: "https://els-solutions.co.jp",
+    siteName: "ELSソリューションズ株式会社",
+    title: "ELSソリューションズ | ESG・省エネ製品",
+    description: "RECO PALLET・CONTINEWM・CM Fiber Cassetteで企業のESG経営とCO₂削減を支援。工事不要の省エネソリューション。",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ELSソリューションズ | ESG・省エネ製品",
+    description: "RECO PALLET・CONTINEWM・CM Fiber Cassetteで企業のESG経営とCO₂削減を支援。工事不要の省エネソリューション。",
+  },
 };
 
 export default function RootLayout({
