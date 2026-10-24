@@ -33,6 +33,9 @@ export default function Footer() {
               <Link href="/contact" className="text-sm text-background/60 hover:text-background transition-colors no-underline">
                 お問い合わせ
               </Link>
+              <a href="https://elssol.jp" target="_blank" rel="noopener" className="text-sm text-background/60 hover:text-background transition-colors no-underline">
+                消費者向け事業：ELS — Enjoy Life Style ↗
+              </a>
             </nav>
           </div>
 

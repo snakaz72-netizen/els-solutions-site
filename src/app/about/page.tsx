@@ -3,7 +3,7 @@ import Link from "next/link";
 import {
   ArrowRight, MapPin, Phone, Mail, Building2,
   User, Calendar, Briefcase, Package, Store,
-  TreePine, Zap, Layers,
+  TreePine, Zap, Layers, Globe,
 } from "lucide-react";
 import { MotionDiv } from "@/components/MotionWrapper";
 
@@ -23,6 +23,7 @@ const companyRows = [
   { Icon: Briefcase,  label: "事業内容",        value: "ESG・サステナビリティ関連製品の販売代理店" },
   { Icon: Package,    label: "取扱製品",        value: "RECO PALLET・CONTINEWM・CM Fiber Cassette" },
   { Icon: Store,      label: "取引形態",        value: "BtoB（法人向け）" },
+  { Icon: Globe,      label: "消費者向け事業",   value: "ELS — Enjoy Life Style（海外製品の輸入・独占販売）", href: "https://elssol.jp" },
 ];
 
 const products = [
@@ -169,7 +170,11 @@ export default function AboutPage() {
                           <span className="text-sm font-semibold text-foreground">{row.label}</span>
                         </div>
                       </td>
-                      <td className="px-6 py-4 text-sm text-muted-foreground">{row.value}</td>
+                      <td className="px-6 py-4 text-sm text-muted-foreground">
+                        {"href" in row && row.href ? (
+                          <a href={row.href} target="_blank" rel="noopener" className="text-primary hover:underline">{row.value}</a>
+                        ) : row.value}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
