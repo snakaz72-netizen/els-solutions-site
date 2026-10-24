@@ -94,7 +94,7 @@ export default function PrivacyPage() {
                 <div className="bg-secondary/50 rounded-lg p-6 text-sm space-y-2">
                   <p className="font-semibold text-foreground">ELSソリューションズ株式会社</p>
                   <p className="text-muted-foreground">代表取締役：中澤俊輔</p>
-                  <p className="text-muted-foreground">〒279-0023 千葉県浦安市高洲4-3-1-1527</p>
+                  <p className="text-muted-foreground">〒279-0023 千葉県浦安市高洲4-3-1</p>
                   <p className="text-muted-foreground">
                     E-mail：{" "}
                     <a

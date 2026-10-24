@@ -47,7 +47,7 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-1 text-background/50 shrink-0" />
                 <span className="text-sm text-background/70">
-                  〒279-0023<br />千葉県浦安市高洲4-3-1-1527
+                  〒279-0023<br />千葉県浦安市高洲4-3-1
                 </span>
               </div>
               <div className="flex items-center gap-3">

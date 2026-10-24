@@ -314,7 +314,7 @@ export default function ContactPage() {
                     <div>
                       <p className="text-sm font-medium text-foreground mb-1">所在地</p>
                       <p className="text-sm text-muted-foreground leading-relaxed">
-                        〒279-0023<br />千葉県浦安市高洲4-3-1-1527
+                        〒279-0023<br />千葉県浦安市高洲4-3-1
                       </p>
                     </div>
                   </div>

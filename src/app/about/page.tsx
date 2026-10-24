@@ -17,7 +17,7 @@ const companyRows = [
   { Icon: Building2,  label: "会社名",         value: "ELSソリューションズ株式会社" },
   { Icon: User,       label: "代表取締役",      value: "中澤俊輔" },
   { Icon: Calendar,   label: "設立",            value: "2026年4月2日" },
-  { Icon: MapPin,     label: "所在地",          value: "〒279-0023 千葉県浦安市高洲4-3-1-1527" },
+  { Icon: MapPin,     label: "所在地",          value: "〒279-0023 千葉県浦安市高洲4-3-1" },
   { Icon: Phone,      label: "電話番号",        value: "047-301-9376" },
   { Icon: Mail,       label: "メールアドレス",   value: "info@els-solutions.co.jp" },
   { Icon: Briefcase,  label: "事業内容",        value: "ESG・サステナビリティ関連製品の販売代理店" },
