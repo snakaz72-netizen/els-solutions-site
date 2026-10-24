@@ -23,14 +23,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border/50 shadow-sm">
       <div className="container flex items-center justify-between h-16 md:h-20">
         <Link href="/" className="flex items-center gap-3 no-underline">
-          <div className="flex flex-col">
-            <span className="text-lg md:text-xl font-bold tracking-tight text-foreground leading-tight">
-              ELS Solutions
-            </span>
-            <span className="text-[10px] md:text-xs text-muted-foreground tracking-widest uppercase">
-              ESG &amp; Sustainability
-            </span>
-          </div>
+          <img src="/logo.svg" alt="ELS Solutions — ESG & Sustainability" width={823} height={278} className="h-10 md:h-12 w-auto" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">

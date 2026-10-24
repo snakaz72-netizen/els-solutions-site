@@ -7,10 +7,7 @@ export default function Footer() {
       <div className="container py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-xl font-bold mb-2">ELS Solutions</h3>
-            <p className="text-sm text-background/60 tracking-widest uppercase mb-6">
-              ESG &amp; Sustainability
-            </p>
+            <img src="/logo-white.svg" alt="ELS Solutions — ESG & Sustainability" width={823} height={278} className="h-14 w-auto mb-6" />
             <p className="text-sm text-background/70 leading-relaxed">
               ESGやサスティナビリティに貢献するソリューションを通じて、持続可能な社会の実現に取り組んでいます。
             </p>
